@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSAccessibilityUsageDescription</key>
+    <string>kwn needs accessibility access to manage window positions and layouts when you dock or undock your Mac.</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>CFBundleDisplayName</key>
+    <string>kwn</string>
+    <key>CFBundleName</key>
+    <string>kwn</string>
+</dict>
+</plist>
