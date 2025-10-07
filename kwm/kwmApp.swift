@@ -10,12 +10,18 @@ import CoreData
 
 @main
 struct kwmApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var appController = AppController()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        MenuBarExtra("KWM", systemImage: "display.2") {
+            MenuBarView()
+                .environmentObject(appController)
+        }
+        .menuBarExtraStyle(.window)
+
+        Settings {
+            SettingsView()
+                .environmentObject(appController)
         }
     }
 }
